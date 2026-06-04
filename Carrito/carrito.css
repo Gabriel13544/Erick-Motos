@@ -1,0 +1,580 @@
+/* ===== HEADER ===== */
+header {
+    background-color: #ffffff;
+    border-bottom: 3px solid #ff6b00;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    animation: slideDown 0.5s ease-in-out;
+}
+
+/* ===== NAVEGACIÓN ===== */
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.presentacion {
+    font-size: 32px;
+    color: #ff6b00;
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== NAV LINKS ===== */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-nav {
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: #ff6b00;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(255, 107, 0, 0.3);
+}
+
+.btn-nav:hover {
+    background-color: #ff8533;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 107, 0, 0.4);
+    border-color: white;
+}
+
+.btn-nav:active {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 10px rgba(255, 107, 0, 0.3);
+}
+
+/* ===== CONTENEDOR COMPRA ===== */
+.contenedor-compra {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: calc(100vh - 150px);
+    animation: fadeInUp 0.6s ease-in-out;
+}
+
+.compra {
+    background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.compra h2 {
+    color: #ff6b00;
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 3px solid #ff6b00;
+    padding-bottom: 15px;
+}
+
+/* ===== PRODUCTO COMPRA ===== */
+.producto-compra {
+    background-color: white;
+    border: 2px solid #f0f0f0;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    animation: slideInLeft 0.5s ease-in-out;
+}
+
+.producto-compra:hover {
+    border-color: #ff6b00;
+    box-shadow: 0 5px 20px rgba(255, 107, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* ===== HEADER PRODUCTO ===== */
+.header-producto {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.checkbox-producto {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    accent-color: #ff6b00;
+    transition: all 0.3s ease;
+}
+
+.checkbox-producto:hover {
+    transform: scale(1.2);
+}
+
+.checkbox-producto:checked {
+    accent-color: #000000;
+}
+
+.nombre-producto {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nombre-producto:hover {
+    color: #ff6b00;
+}
+
+/* ===== DETALLES PRODUCTO ===== */
+.detalles-producto {
+    padding-left: 37px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.label-color {
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ===== OPCIONES COLOR ===== */
+.opciones-color {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.radio-color {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.radio-color:hover {
+    background-color: rgba(255, 107, 0, 0.1);
+}
+
+.radio-color input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #ff6b00;
+    transition: all 0.3s ease;
+}
+
+.radio-color input[type="checkbox"]:hover {
+    transform: scale(1.15);
+}
+
+.radio-color input[type="checkbox"]:checked {
+    accent-color: #000000;
+}
+
+.radio-color input[type="checkbox"]:checked + .circulo-color {
+    transform: scale(1.3);
+    box-shadow: 0 0 15px rgba(255, 107, 0, 0.5);
+}
+
+/* ===== CIRCULO COLOR ===== */
+.circulo-color {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.circulo-color.rojo {
+    background-color: #FF0000;
+    border-color: #cc0000;
+}
+
+.circulo-color.azul {
+    background-color: #0000FF;
+    border-color: #0000cc;
+}
+
+.circulo-color.negro {
+    background-color: #000000;
+    border-color: #333333;
+}
+
+.radio-color:hover .circulo-color {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== CONTENEDOR BOTÓN ===== */
+.contenedor-boton {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 30px 0;
+    border-top: 3px solid #ff6b00;
+    animation: slideUp 0.6s ease-in-out;
+}
+
+/* ===== BOTÓN WHATSAPP ===== */
+.btn-whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 18px 40px;
+    background: linear-gradient(135deg, #25D366 0%, #20ba5a 100%);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-whatsapp::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.btn-whatsapp:hover::before {
+    left: 100%;
+}
+
+.btn-whatsapp:hover {
+    background: linear-gradient(135deg, #20ba5a 0%, #1da851 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(37, 211, 102, 0.4);
+}
+
+.btn-whatsapp:active {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 15px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-img {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+}
+
+.btn-whatsapp:hover .whatsapp-img {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* ===== ANIMACIONES ===== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .contenedor-compra {
+        padding: 20px 10px;
+    }
+
+    .compra {
+        padding: 20px;
+    }
+
+    .compra h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .producto-compra {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .opciones-color {
+        gap: 15px;
+        padding: 12px;
+    }
+
+    .radio-color {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    .btn-whatsapp {
+        padding: 15px 30px;
+        font-size: 14px;
+        gap: 10px;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .whatsapp-img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .header-producto {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .detalles-producto {
+        padding-left: 0;
+    }
+
+    .nombre-producto {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor-compra {
+        padding: 15px 5px;
+    }
+
+    .compra {
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+    .compra h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .producto-compra {
+        padding: 12px;
+        margin-bottom: 12px;
+        border-radius: 10px;
+    }
+
+    .checkbox-producto {
+        width: 20px;
+        height: 20px;
+    }
+
+    .nombre-producto {
+        font-size: 14px;
+    }
+
+    .label-color {
+        font-size: 12px;
+    }
+
+    .opciones-color {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .radio-color {
+        padding: 8px;
+        font-size: 13px;
+        width: 100%;
+    }
+
+    .circulo-color {
+        width: 20px;
+        height: 20px;
+    }
+
+    .btn-whatsapp {
+        padding: 14px 20px;
+        font-size: 12px;
+        gap: 8px;
+        width: 100%;
+        margin: 20px auto;
+        flex-direction: column;
+    }
+
+    .whatsapp-img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .contenedor-boton {
+        padding: 20px 0;
+        margin-top: 30px;
+    }
+}
+
+/* ===== ANIMACIÓN SLIDE DOWN ===== */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== RESPONSIVE HEADER ===== */
+@media (max-width: 768px) {
+    header {
+        border-bottom: 2px solid #ff6b00;
+    }
+
+    nav {
+        padding: 15px 20px;
+        gap: 12px;
+    }
+
+    .presentacion {
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+
+    .nav-links {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .btn-nav {
+        padding: 8px 16px;
+        font-size: 12px;
+        border-radius: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        border-bottom: 2px solid #ff6b00;
+    }
+
+    nav {
+        padding: 12px 15px;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .presentacion {
+        font-size: 20px;
+        letter-spacing: 0.5px;
+        margin-bottom: 5px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .btn-nav {
+        padding: 6px 12px;
+        font-size: 11px;
+        border-radius: 6px;
+        width: auto;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .btn-nav:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(255, 107, 0, 0.3);
+    }
+
+    .btn-nav:active {
+        transform: translateY(0px);
+    }
+}
+
+/* ===== MEDIA QUERY EXTRA PEQUEÑAS ===== */
+@media (max-width: 320px) {
+    .presentacion {
+        font-size: 18px;
+        letter-spacing: 0px;
+    }
+
+    nav {
+        padding: 10px 10px;
+        gap: 8px;
+    }
+
+    .btn-nav {
+        padding: 5px 10px;
+        font-size: 10px;
+        width: auto;
+        display: inline-block;
+    }
+
+    .contenedor-boton {
+        padding: 15px 0;
+    }
+
+    .btn-whatsapp {
+        padding: 12px 15px;
+        font-size: 11px;
+    }
+}

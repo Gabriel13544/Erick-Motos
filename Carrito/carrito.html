@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Carrito de Compras</title>
+    <link rel="stylesheet" href="carrito.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="presentacion">Realiza tu Pedido</h1>
+            <div class="nav-links">
+                <a href="../Ofertas/ofertas.html" class="btn-nav">← Volver a Ofertas</a>
+                <a href="../index.html" class="btn-nav">← Volver al Inicio</a>
+            </div>
+        </nav>
+    </header>
+
+<main class="contenedor-compra">
+    <section class="compra">
+            <h2>Selecciona los productos que deseas comprar</h2>
+
+            <!-- MOTO DAKAR -->
+            <div class="producto-compra">
+                <div class="header-producto">
+                    <input type="checkbox" class="checkbox-producto" value="Moto Dakar" id="dakar">
+                    <label for="dakar" class="nombre-producto">Moto Dakar</label>
+                </div>
+                <div class="detalles-producto">
+                    <span class="label-color">Color:</span>
+                    <div class="opciones-color">
+                        <label class="radio-color">
+                            <input type="checkbox" name="color-dakar" value="Rojo - Moto Dakar" class="color-checkbox">
+                            <span class="circulo-color rojo"></span> Rojo
+                        </label>
+                        <label class="radio-color">
+                            <input type="checkbox" name="color-dakar" value="Azul - Moto Dakar" class="color-checkbox">
+                            <span class="circulo-color azul"></span> Azul
+                        </label>
+                        <label class="radio-color">
+                            <input type="checkbox" name="color-dakar" value="Negro - Moto Dakar" class="color-checkbox">
+                            <span class="circulo-color negro"></span> Negro
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MOTO HALCON -->
+            <div class="producto-compra">
+                <div class="header-producto">
+                    <input type="checkbox" class="checkbox-producto" value="Moto Halcón" id="halcon">
+                    <label for="halcon" class="nombre-producto">Moto Halcón</label>
+                </div>
+                <div class="detalles-producto">
+                    <span class="label-color">Color:</span>
+                    <div class="opciones-color">
+                        <label class="radio-color">
+                            <input type="checkbox" name="color-halcon" value="Rojo - Moto Halcón" class="color-checkbox">
+                            <span class="circulo-color rojo"></span> Rojo
+                        </label>
+                        <label class="radio-color">
+                            <input type="checkbox" name="color-halcon" value="Negro - Moto Halcón" class="color-checkbox">
+                            <span class="circulo-color negro"></span> Negro
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MOTO JOMAR -->
+            <div class="producto-compra">
+                <div class="header-producto">
+                    <input type="checkbox" class="checkbox-producto" value="Moto Jomar" id="jomar">
+                    <label for="jomar" class="nombre-producto">Moto Jomar</label>
+                </div>
+                <div class="detalles-producto">
+                    <span class="label-color">Color:</span>
+                    <div class="opciones-color">
+                        <label class="radio-color">
+                            <input type="checkbox" name="color-jomar" value="Rojo - Moto Jomar" class="color-checkbox">
+                            <span class="circulo-color rojo"></span> Rojo
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MOTO CANNONI -->
+            <div class="producto-compra">
+                <div class="header-producto">
+                    <input type="checkbox" class="checkbox-producto" value="Moto Cannoni" id="cannoni">
+                    <label for="cannoni" class="nombre-producto">Moto Cannoni</label>
+                </div>
+                <div class="detalles-producto">
+                    <span class="label-color">Color:</span>
+                    <div class="opciones-color">
+                        <label class="radio-color">
+                            <input type="checkbox" name="color-cannoni" value="Negro - Moto Cannoni" class="color-checkbox">
+                            <span class="circulo-color negro"></span> Negro
+                        </label>
+                    </div>
+                </div>
+            </div>  
+ 
+            <div class="producto-compra">
+                <div class="header-producto">
+                    <input type="checkbox" class="checkbox-producto" value="Bicimoto halcon" id="bicimoto">
+                    <label for="bicimoto" class="nombre-producto">Bicimoto Halcon</label>
+                </div>
+                <div class="detalles-producto">
+                    <span class="label-color">Color:</span>
+                    <div class="opciones-color">
+                        <label class="radio-color">
+                            <input type="checkbox" name="color-bicimoto" value="Negro - Bicimoto" class="color-checkbox">
+                            <samp class="circulo-color azul"></samp>Azul
+                        </label>
+                        <label class="radio-color">
+                            <input type="checkbox" name="color-bicimoto" value="Rojo - Bicimoto" class="color-checkbox">
+                            <samp class="circulo-color rojo"></samp>Rojo
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contenedor-boton">
+                <button class="btn-whatsapp" onclick="enviarPedidoWhatsApp()" title="Realizar pedido por WhatsApp">
+                    <img src="Icono/WhaIcon.png" alt="Icono de WhatsApp" class="whatsapp-img">
+                    <span>Completar Pedido</span>
+                </button>
+            </div>
+    </section>
+</main>
+    <script src="carrito.js"></script>
+</body>
+</html>
