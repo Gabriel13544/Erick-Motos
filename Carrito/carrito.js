@@ -84,16 +84,16 @@ function enviarPedidoWhatsApp() {
     if (!validarSeleccion()) {
         return;
     }
-    
+
     // Crear mensaje
     const mensaje = crearMensaje();
-    
+
     // Codificar mensaje para URL
     const mensajeCodificado = encodeURIComponent(mensaje);
-    
-    // Crear URL de WhatsApp
-    const urlWhatsapp = `https://wa.me/5354214460?text={mensajeCodificado}`;
-    
+
+    // Crear URL de WhatsApp (CORREGIDO)
+    const urlWhatsapp = `https://wa.me/5354214460?text=${mensajeCodificado}`;
+
     // Abrir WhatsApp en una nueva pestaña
     window.open(urlWhatsapp, '_blank');
 }
