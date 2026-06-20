@@ -93,7 +93,6 @@ function enviarPedidoWhatsApp() {
 
     // Crear URL de WhatsApp (CORREGIDO)
     const urlWhatsapp = `https://wa.me/NUMEROWHATSAPP?text={NUMERO_WHATSAPP}?text=NUMEROW​HATSAPP?text={mensajeCodificado}`;
-
     // Abrir WhatsApp en una nueva pestaña
     window.open(urlWhatsapp, '_blank');
 }
