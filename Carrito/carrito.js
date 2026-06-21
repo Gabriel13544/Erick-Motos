@@ -78,7 +78,7 @@ function crearMensaje() {
     return mensaje;
 }
 
-// Función para enviar a WhatsApp
+// Función para enviar a Whatsapp 
 function enviarPedidoWhatsApp() {
     // Validar selección
     if (!validarSeleccion()) {
@@ -91,8 +91,9 @@ function enviarPedidoWhatsApp() {
     // Codificar mensaje para URL
     const mensajeCodificado = encodeURIComponent(mensaje);
 
-    // Crear URL de WhatsApp (CORREGIDO)
-    const urlWhatsapp = `https://wa.me/NUMEROWHATSAPP?text={NUMERO_WHATSAPP}?text=NUMEROW​HATSAPP?text={mensajeCodificado}`;
+    // Crear URL de WhatsApp (CORREGIDA)
+    const urlWhatsapp = `https://wa.me/${NUMERO_WHATSAPP}?text=${mensajeCodificado}`;
+    
     // Abrir WhatsApp en una nueva pestaña
     window.open(urlWhatsapp, '_blank');
 }
